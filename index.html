@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/icons/logo-meyir.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/modal-video.min.css">
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+  <!-- <script src="../js/jquery.maskMoney.js" type="text/javascript"></script> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Meyir.kz</title>
+
+  <style>
+    	/* Custom style */
+      .accordion-button::after {
+      background-image: url('../Meyir.kz/img/icons/collapse-plus.svg');
+      transform: scale(.7) !important;
+    }
+    .accordion-button:not(.collapsed)::after {
+      background-image: url("../Meyir.kz/img/icons/collapse-x.svg");
+    }
+
+    .accordion-button:not(.collapsed) {
+      color: #0113AE;
+      background-color: #fff;
+      box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+    }
+    .accordion-item {
+      border: 0;
+    }
+
+    .accordion-button {
+      color: #0113AE;
+      background-color: #fff;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    * {
+      font-family: 'SFProDisplay';
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container_copy">
+      <a href="index.html" class="header__logo">
+        <img src="img/icons/logo-meyir.png" alt="">
+      </a>
+      <div class="header__menu_lang">
+        <nav class="header__menu">
+          <ul>
+            <li><a href="#" class="header__menu_items">Личный кабинет</a></li>
+          </ul>
+          <div class="header__lang2" id="header__lang2">
+            <a href="#" class="header__lang_items active_lang2">RU</a>
+            <a href="#" class="header__lang_items">KZ</a>
+          </div>
+        </nav>
+        <div class="header__lang" id="header__lang">
+          <a href="#" class="header__lang_items active_lang">RU</a>
+          <a href="#" class="header__lang_items">KZ</a>
+        </div>
+      </div>
+      <div class="header__burger">
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1 class="main__title">Впервые создана уникальная  Digital-система с высоким показателем работы, где ты
+        начнешь ПОЛУЧАТЬ  100.000 тенге ежемесячно, уже через 2 месяца!
+      </h1>
+      <button class="main__button" id="main__button">Начать сейчас</button>
+      <div class="main__modal" id="main__myModal">
+        <div class="main__modal_content">
+          <span class="main__modal_close"><img src="img/icons/close-icon.svg" alt=""></span>
+          <h2 class="main__modal_title">Ты точно до конца прочитал информацию о системе, если да, то сделай 2 простых шага.</h2>
+          <h3 class="main__modal_text1">1.Проведи оплату</h3>
+          <p class="main__modal_text2">Оплати 500 тенге на kaspi gold <strong>87764889993</strong> на имя  Гульшат К. или по номеру карты <strong>5169 4971 1936 9985</strong></p>
+          <h3 class="main__modal_text1">2.Заполни форму</h3>
+          <p class="main__modal_text2">Заполни форму личных и контактных данных нажмите кнопку <strong>"ПРОЙТИ ТЕСТ- ДОСТУП"</strong>.</p>
+          <form action="" class="main__modal_form">
+            <input type="text" id="main__modal_name" placeholder="ФИО" required>
+            <input type="number" id="main__modal_number" placeholder="ИИН" maxlength=12 required>
+            <input type="tel" id="main__modal_phone" placeholder="Ваш номер телефона" required>
+            <input type="file" class="custom-file-input" id="main__modal_file" required>
+            <label class="main__modal_container">
+              <input type="checkbox" checked="checked" required>
+              Я согласен на обработку данных
+              <span class="main__modal_checkmark"></span>
+            </label>
+            <button class="main__modal_button1" type="submit">Оплатить Paypost</button>
+            <button class="main__modal_button2" type="submit">Оплатить Payeer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="stat">
+    <div class="container">
+      <h2 class="title">Почему <span class="title-blue">Нужно выбрать нас</span></h2>
+      <div class="stat__content">
+        <div class="stat__content_items">
+          <h3 class="subtitle">
+            Потому что, высокотехнологические функционалы системы генерируют доход в партнёрских программах на полном автомате, без участия человека!
+          </h3>
+          <div class="stat__content_elem">
+            <h3 class="stat__content_title">Уже свыше 5000</h3>
+            <p>Участников <br>
+              пользуются системой</p>
+          </div>
+          <div class="stat__content_elem">
+            <h3 class="stat__content_title">Более 100 000 тенге</h3>
+            <p>Минимально получает наш участник в месяц на полном автомате</p>
+          </div>
+        </div>
+        <div class="stat__content_items">
+          <img src="img/Rectangle 12.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="advantages">
+    <div class="container">
+      <h2 class="title"><span class="title-yellow">Преимущества</span> нашей системы</h2>
+      <div class="advantages__content">
+        <div class="advantages__content_items">
+          <p>Ничего создавать не надо</p>
+          <p class="advantages__aqua_text">Не НУЖНО ничего продавать</p>
+          <p>Не НУЖНО создавать бизнес приносящий доход</p>
+        </div>
+        <div class="advantages__content_items">
+          <p class="advantages__pink_text">Всё СОЗДАНО уже в системе для тебя</p>
+          <p class="advantages__yellow_text">За ТЕБЯ будет работать система, которая  выведет на стабильный доход</p>
+        </div>
+        <div class="advantages__content_items">
+          <p class="advantages__purple_text">Самая простая коммуникация с системой</p>
+          <p class="advantages__orange_text">Не нужно её настраивать</p>
+          <p class="advantages__purple_text2">Не НУЖНО вообще заморачиваться ни о чём</p>
+        </div>
+      </div>
+      <div class="advantages__content_adap">
+        <div class="advantages__content_items">
+          <p>Ничего создавать не надо</p>
+          <p class="advantages__aqua_text">Не НУЖНО ничего продавать</p>
+          <p>Не НУЖНО создавать бизнес приносящий доход</p>
+          <p class="advantages__pink_text">Всё СОЗДАНО уже в системе для тебя</p>
+          <p class="advantages__yellow_text">За ТЕБЯ будет работать система, которая  выведет на стабильный доход</p>
+          <p class="advantages__purple_text">Самая простая коммуникация с системой</p>
+          <p class="advantages__orange_text">Не нужно её настраивать</p>
+          <p class="advantages__purple_text2">Не НУЖНО вообще заморачиваться ни о чём</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <h2 class="title">Узнай <span class="title-blue">о системе за пару минут</span></h2>
+      <div class="about__content">
+        <div class="about__video js-video-button" data-video-id='96VYQYmScZE'>
+          <a href="javascript:void(0)">
+            <img src="img/icons/play-icon.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testaccess1">
+    <div class="container">
+      <div class="testaccess1__content">
+        <h2 class="title">Получить систему можно , просто пройдя тест-доступ</h2>
+        <h3 class="subtitle">Без прохождения теста, попасть в ситему невозможно</h3>
+        <p>Проверь, есть ли у тебя возможность получить доступ в систему</p>
+        <button class="testaccess1__button" id="testaccess1__button">Проверить</button>
+      </div>
+      <div class="testaccess1__modal" id="testaccess1__myModal">
+        <div class="testaccess1__modal_content">
+          <span class="testaccess1__modal_close"><img src="img/icons/close-icon.svg" alt=""></span>
+          <h2 class="testaccess1__modal_title">Сделай 2 простых шага, чтобы получить ДОСТУП в систему.</h2>
+          <h3 class="testaccess1__modal_text1">1.Проведи оплату</h3>
+          <p class="testaccess1__modal_text2">Оплати 500 тенге на kaspi gold <strong>87764889993</strong> на имя  Гульшат К. или по номеру карты <strong>5169 4971 1936 9985</strong></p>
+          <h3 class="testaccess1__modal_text1">2.Заполни форму</h3>
+          <p class="testaccess1__modal_text2">Заполни форму личных и контактных данных нажмите кнопку <strong>"ПРОЙТИ ТЕСТ- ДОСТУП"</strong>.</p>
+          <form action="" class="testaccess1__modal_form">
+            <input type="text" id="testaccess1__modal_name" placeholder="Имя" required>
+            <input type="tel" id="testaccess1__modal_phone" placeholder="Ваш номер телефона" required>
+            <input type="file" class="custom-file-input" id="testaccess1__modal_file" placeholder="Прикрепите файл с чеком" required>
+            <label class="testaccess1__modal_container">
+              <input type="checkbox" checked="checked" required>
+              Я согласен на обработку данных
+              <span class="testaccess1__modal_checkmark"></span>
+            </label>
+            <button class="testaccess1__modal_button1" type="submit">Оплатить Paypost</button>
+            <button class="testaccess1__modal_button2" type="submit">Оплатить Payeer</button>
+          </form>
+        </div>
+      </div>
+      <img src="img/Illustration.png" alt="" class="testaccess1__bg">
+    </div>
+  </section>
+
+  <section class="system">
+    <div class="container">
+      <h2 class="title"><span class="title-blue">Что тебя ждет</span> в нашей системе </h2>
+      <div class="system__content">
+        <div class="system__content_items">
+          <div class="system__img_text">
+            <img src="img/Rectangle 49.jpg" alt="">
+            <h3 class="system__content_title">Что меня ждет  в системе ?</h3>
+            <p>Каждый месяц забирать на полном автомате, не опасаясь завтрашнего ... </p>
+          </div>
+          <button class="system__content_button" id="system__content_button1">Узнать больше</button>
+        </div>
+        <div class="system__modal1" id="system__myModal1">
+          <div class="system__modal_content">
+            <span class="system__modal_close1"><img src="img/icons/close-icon.svg" alt=""></span>
+            <h2 class="system__modal_title"></h2>
+            <h3 class="system__modal_text1">Получишь *ДОСТУП* в систему, дальше тебя ждет:</h3>
+            <p>Каждый месяц забирать на полном автомате, не опасаясь завтрашнего дня от 100.000 тенге и более без каких-либо ограничений в любой момент, не зависимо от ситуации за окном.</p>
+
+            <p>Также, для улучшения качества твоей жизни, при каждом достижении автосистемой уровней партнёрских программ предоставляются БЕСПЛАТНО следующие услуги:</p>
+              
+            <p>1) твоя жизнь будет застрахована накопительным страховым полисом "Halyk Life", который обеспечить пенсионную выплату</p>
+            <p>2) предоставится с годовым обслуживанием абонемент услуг личного юриста, доктора и финансиста "Европейской Юридической Службы" на все случаи жизни</p>
+            <p>3) доставять по адресу панто и мёда содержащую продукцию по программе "Sau Agza" для оздоровления организма.</p>
+              
+            <p>4) автоматическое открытие для личного пользования электронного депозитария IT платформе “CPnet” с суммой вклада в размере 300.000 тенге</p>
+              
+            <p>5) автоматическое участие в программе «Комек» для получения стабильного дохода на погашения кредитов, долгов в размере 4.053.000 тенге</p>
+            <p>6) автоматическое участие в программе «Сеним» для получения стабильного дохода на потребительские нужды в размере 2.600.000 тенге</p>
+              
+            <p>7) автоматическое участие в накопительной программе «Болашак» для получения стабильного дохода на покупку движимого и недвижимого имущества в размере 12.000.000 тенге</p>
+              
+            <p>8) автоматическое участие в программе помощи малоимущим для вступления в проект и детям инвалидам на лечение.</p>
+              
+            <p>9) автоматическое участие в программе «Туризм» для получения стабильного дохода и выдается путёвка на отдых и лечение только в санатории Казахстана.</p>
+              
+            <p>10) автоматическое участие в программе «Инвест» для получения стабильного дохода с инвестиционных портфелей стартап проектов Казахстана.</p>
+          </div>
+        </div>
+        <div class="system__content_items">
+          <div class="system__img_text">
+            <img src="img/Rectangle 50.jpg" alt="">
+            <h3 class="system__content_title">Есть ли гарантия ?</h3>
+            <p>Согласна закона РК заключается настоящий Договор -это соглашение между собой двух или..</p>
+          </div>
+          <button class="system__content_button" id="system__content_button2">Узнать больше</button>
+        </div>
+        <div class="system__modal2" id="system__myModal2">
+          <div class="system__modal_content">
+            <span class="system__modal_close2"><img src="img/icons/close-icon.svg" alt=""></span>
+            <h2 class="system__modal_title">Ощутимая гарантия</h2>
+            <h3 class="system__modal_text1">Нюансы, о которых ты не знал</h3>
+            <p>Согласна закона РК заключается настоящий Договор -это соглашение между собой двух или более сторон (субъектов), по какому-либо вопросу с целью установления, изменения или прекращения правовых отношении.</p>
+            <p>Мы даем 100% гарантию на качественный автоматизированный сервис под соблюдением законов РК.</p>
+            <p>Мы даем 100% гарантию автоматизации всех процессов.</p>
+              
+            <p>Это самый безопасный из всех видов доходов, так как все процессы автоматизированы до мельчайших деталей, что позволит избежать ошибок  и потерь.</p>
+              
+            <p>Доход генерируется на полном автомате, с вступительных взносов участников, согласно Договора.</p>
+              
+            <p>Автосистема по очередно достигает и переходит на полном автомате каждому участнику уровни партнёрских программ.</p>
+              
+            <p>При каждом прохождении уровней автосистемой отрабатывается одновременные процессы  начисления дохода за пройденный уровень и процесс удержания(оплаты) за новый не достигнутый уровень, тем самым обеспечивается начисление дохода следующего уровня, что позволяет гарантированно абсолютно каждому участнику получать доход без риска и потерь.</p>
+              
+            <p>Вступительный единоразовый взнос для участия в проекте настолько минимален , что оплатить его может даже безработный - это тоже одна из гарантии долгосрочности системы.</p>
+          </div>
+        </div>
+        <div class="system__content_items">
+          <div class="system__img_text">
+            <img src="img/Rectangle 51.jpg" alt="">
+            <h3 class="system__content_title">А знаешь, что будет после?</h3>
+            <p>Тотальный контроль в денежных движениях, Теперь ни одна тенге не ...</p>
+          </div>
+          <button class="system__content_button" id="system__content_button3">Узнать больше</button>
+        </div>
+        <div class="system__modal3" id="system__myModal3">
+          <div class="system__modal_content">
+            <span class="system__modal_close3"><img src="img/icons/close-icon.svg" alt=""></span>
+            <h2 class="system__modal_title">А знаешь, что будет после?</h2>
+            <h3 class="system__modal_text1">Тотальный контроль в денежных движениях</h3>
+            <p>Теперь ни одна тенге не скроется от тебя – ты будешь чётко видеть, откуда приходят деньги, куда уходят – и где сколько их осталось.</p>
+            <br>
+            <h3 class="system__modal_text1">Начнешь легко тратить на 5-15% меньше, чем обычно</h3>
+            <p>90% участников, которые получили эту систему, перестают сливать деньги на мусор и начинают тратить с умом и комфортно сохранять 5-15% от расходов.</p>
+            <br>
+            <h3 class="system__modal_text1">Деньги будут работать на тебя, а ты богатеть:)</h3>
+            <p>Сохранённые деньги в инвестиционных портфелях будут работать дополнительно на тебя . Пользуясь услугами финансиста, многие начали получать доход  за год больше, чем за всю прошлую жизнь.</p>
+            <br>
+          </div>
+        </div>
+        <div class="system__content_items">
+          <div class="system__img_text">
+            <img src="img/Rectangle 52.jpg" alt="">
+            <h3 class="system__content_title">Кем создан проект и зачем всё это нужно?</h3>
+            <p>Проект  создан гражданкой Казахстана
+              Я создала простую систе...</p>
+          </div>
+          <button class="system__content_button" id="system__content_button4">Узнать больше</button>
+        </div>
+        <div class="system__modal4" id="system__myModal4">
+          <div class="system__modal_content">
+            <span class="system__modal_close4"><img src="img/icons/close-icon.svg" alt=""></span>
+            <h2 class="system__modal_title">Проект  создан гражданкой Казахстана</h2>
+            <p class="system__modal_text2">Я создала простую систему получения денег, с помощью которой, чтобы все, без исключения все нуждающиеся вышли из долговой ямы и накопили первый 1.000.000 тенге с нуля хотя бы за 1 год.</p>
+            <h3 class="system__modal_text1">Гульшат Сауровна</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="qna">
+    <div class="container">
+      <h2 class="title"><span class="title-blue">Вопросы и</span> ответы</h2>
+      <div class="row">
+        <div class="col">          
+          <div class="accordion" id="myAccordion">
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                      <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">1. Законность проекта в чем выражается?</button>									
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                      <div class="card-body">
+                          <p>Принцип законности проекта выражается в том, что весь процесс создания, распределения и использования денежных средств детально соблюдается согласно Договора «Об участии в проекте взаимопомощи».</p>
+                          <p>Договор заключается с ИП «Касенова», именуемая в дальнейшем по тексту “Компания”, в лице директора Касеновой Гульшат Сауровны, действующая на основании, свидетельство о регистрации, номер 0139545, серия 12915 от 17.07.2013года</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                      <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">2. Миссия проекта?</button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                      <div class="card-body">
+                          <p>Миссия проекта – взаимопомощью решить  острые задачи с доходом и вывести участников на стабильный доход в кратчайшие сроки</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                      <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">3. Какая услуга или физическая вещь является вашим продуктом(товаром)?</button>                     
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                      <div class="card-body">
+                          <p>Продуктом проекта является услуга высокотехнологической многофункциональной digital системы, который на полном автомате создает Участнику структуру в партнёрских программах для получения дохода.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour">4. Не финансовая пирамида Ваш проект?</button>									
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>Нет, не финансовая пирамида, так как проект продаёт свой товар/услугу.  А в финансовой пирамиде нет товара/услуги.</p>
+                        <p>И самое главное, что пока нашему продукту нет сравнении и аналогов на просторах интернета.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive">5. Кто может участвовать в проекте и получить доступ в систему?</button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>В данном проекте могут участвовать  реально нуждающиеся в финансовой помощи физическое лицо, независимо от пола, вероисповедания.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSix">6. Как зарегистрировать детей ?</button>                     
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>Тест-доступ дети до 16 лет включительно проходят без опросника, после указания данных ИИН в тест-доступе, бот выдаст для регистрации одноразовую ссылку для регистрации.</p>
+                        <p>Дети до 16 лет регистрируются, как все участники проекта по ИИН, но в личном кабинете, в разделе "ПРОФИЛЬ" кроме данных ФИО и ИИН другие контактные данные не заполняются, полная информация в договоре участия в проекте взаимопомощи.</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">          
+          <div class="accordion" id="myAccordion">
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSeven">
+                      <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSeven">7. Что такое тест-доступ и почему платный?</button>									
+                  </h2>
+                  <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                      <div class="card-body">
+                          <p>Тест-доступ- это опросник состоящий из ряда вопросов, которые выявляют о вашем серьезном намерении получения дохода. </p>
+                          <p>Важно помнить, что получить доступ  в систему, зависит исключительно от ваших честных и логически правильных ответов!</p>
+                          <p>Пенсионные отчисления никоим образом не влияют на получения доступа!</p>
+                          <p>Платный, потому что именно этим критерием первыми отсеиваются люди, которым не нужна помощь в финансовом плане.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingEight">
+                      <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseEight">8. Почему нельзя участвовать в проекте и получить доступ в систему?</button>
+                  </h2>
+                  <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                      <div class="card-body">
+                          <p>Потому что, сначала нужно  определить обречён ли участник на нищету или всё таки есть шанс  победить его бедность! Система создана для нуждающихся исправить финансовое положение, а не ради удовлетворения любопытства. Тест определяет на 100% точно, нуждается реально человек в доходе или нет. </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingNine">
+                      <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseNine">9. Какие сертификаты Вы можете предоставить?</button>                     
+                  </h2>
+                  <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                      <div class="card-body">
+                          <p>Деятельность компании по закону Республики Казахстан не подлежит  сертификации и лицензированию.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTen">10. Сколько участников получили доход?</button>									
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>Это конфиденциальная информация, но всё же уверенно можем заявить, что тысячи довольных участников!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEleven">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseEleven">11. Есть гарантия, что каждый зарегистрированный участник получит доход?</button>
+                </h2>
+                <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>Да, есть гарантия — это автореинвест участника согласна Положения проекта к Договору,  после прохождения участнику 5 уровней, автосистема делает автореинвест, т. е. заново регистрирует участника  в глобальную структуру в порядке очереди и тем самым производит дополнительный перелив, что позволит каждому участнику получать доход без риска и потерь. </p>
+                        <p>Простыми словами автореинвест — это автоматическое повторное инвестирование.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwelve">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwelve">12. Новости</button>                     
+                </h2>
+                <div id="collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <ul>
+                          <li>июль  2019 года - идея проекта, запуск разработки</li>
+                          <li>февраль 2020 года - старт проекта, подключение первых клиентов</li>
+                          <li>апрель 2020 года -  тестирование теорий</li>
+                          <li>октябрь 2020 года - открытие доступа на участие в проекте гражданам более 10 стран </li>
+                          <li>июль 2021 года - начало разработки робота конвертера для привлечения новых участников на полном автомате</li>
+                          <li>сентябрь 2021 года -  завершение робота конвертера</li>
+                          <li>октябрь 2021 года - полное завершение тестирования всей теорий автоматизации</li>
+                          <li>октябрь 2021 года - запуск полной автоматизации и к сервису подключено более 5 000 участников</li>
+                          <li>2022 год - активный рост</li>
+                          <li>2026 год - 20 млн пользователей по всему миру</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="testaccess2">
+    <div class="container">
+      <div class="testaccess2__content">
+        <h2 class="title"><span class="title-yellow">Не упусти свой шанс,</span> попасть в систему!</h2>
+        <h3 class="subtitle">Без прохождения “тест-доступа”  попасть в систему невозможно</h2>
+        <button class="testaccess2__button" id="testaccess2__button">Пройти тест-доступ</button>
+        <div class="testaccess2__modal" id="testaccess2__myModal">
+          <div class="testaccess2__modal_content">
+            <span class="testaccess2__modal_close"><img src="img/icons/close-icon.svg" alt=""></span>
+            <h2 class="testaccess2__modal_title">Сделай 2 простых шага, чтобы получить ДОСТУП в систему.</h2>
+            <h3 class="testaccess2__modal_text1">1.Проведи оплату</h3>
+            <p class="testaccess2__modal_text2">Оплати 500 тенге на kaspi gold <strong>87764889993</strong> на имя  Гульшат К. или по номеру карты <strong>5169 4971 1936 9985</strong></p>
+            <h3 class="testaccess2__modal_text1">2.Заполни форму</h3>
+            <p class="testaccess2__modal_text2">Заполни форму личных и контактных данных нажмите кнопку <strong>"ПРОЙТИ ТЕСТ- ДОСТУП"</strong>.</p>
+            <form action="" class="testaccess2__modal_form">
+              <input type="text" id="testaccess2__modal_name" placeholder="Имя" required>
+              <input type="tel" id="testaccess2__modal_phone" placeholder="Ваш номер телефона" required>
+              <input type="file" class="custom-file-input" id="testaccess2__modal_file" placeholder="Прикрепите файл с чеком" required>
+              <label class="testaccess2__modal_container">
+                <input type="checkbox" checked="checked" required>
+                Я согласен на обработку данных
+                <span class="testaccess2__modal_checkmark"></span>
+              </label>
+              <button class="testaccess2__modal_button1" type="submit">Оплатить Paypost</button>
+              <button class="testaccess2__modal_button2" type="submit">Оплатить Payeer</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <img src="img/Illustration2.png" alt="" class="testaccess2__bg">
+    </div>
+  </section>
+
+  <section class="result">
+    <div class="container">
+      <h2 class="title"><span class="title-blue">Результаты</span> системы</h2>
+      <h3 class="subtitle">Реально созданно современное решение <br>
+        для выхода из кризиса!</h3>
+      <div class="result__content">
+        <img src="img/Three_Smartphone_Screens_Mockup 1.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <div class="container">
+      <h2 class="title">наши <span class="title-blue">Контакты</span></h2>
+      <div class="contacts__content">
+        <div class="contacts__content_items">
+          <img src="img/icons/location-icon.svg" alt="">
+          <p>г. Усть-Каменогорск, пр. Абая, д. 20, офис 301</p>
+        </div>
+        <a href="https://t.me/Meir.kz" class="contacts__content_items">
+          <img src="img/icons/tg-icon.svg" alt="">
+          <p>Meir.kz</p>
+        </a>
+        <a href="https://wa.me/+77051208950" class="contacts__content_items">
+          <img src="img/icons/wa-icon.svg" alt="">
+          <p>+7 (705) 120-89-50</p>
+        </a>
+        <a href="https://instagram.com/meyir.kz" class="contacts__content_items">
+          <img src="img/icons/ig-icon.png" alt="">
+          <p>@meyir.kz</p>
+        </a>
+        <img src="img/Illustration3.png" alt="" class="contacts__bg">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer__up">
+      <div class="container">
+        <a href="#" class="footer__logo"><img src="img/icons/logo.png" alt=""></a>
+        <a href="#" class="footer_privacy">Политика конфиденциальности</a>
+        <a href="#" class="footer__developer">
+          <p>Разработка сайта</p>
+          <img src="img/icons/logo-buginsoft.png" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="footer__down">
+      <div class="container">
+        <p>“Meyir” © 2021 Все правы защищены</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/modal-video.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
